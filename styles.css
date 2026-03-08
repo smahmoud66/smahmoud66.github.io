@@ -61,9 +61,9 @@ p {
 }
 
 .profile-photo {
-    width: 160px;
-    height: 160px;
-    border-radius: 50%;
+    width: 180px;
+    height: auto;
+    aspect-ratio: 3 / 4;
     object-fit: cover;
     float: left;
     margin-right: 1.5rem;
