@@ -47,21 +47,21 @@ main {
 }
 
 .sidebar {
-    width: 280px;
+    width: 300px;
     flex-shrink: 0;
 }
 
 .sidebar-photo {
     max-width: 320px;
-    width: 260px;
+    width: 280px;
     height: auto;
     display: block;
     margin-bottom: 1rem;
 }
 
 .sidebar-name {
-    font-size: 1.7rem;
-    font-weight: 700;
+    font-size: 1.3rem;
+    font-weight: 600;
     margin-bottom: 0.25rem;
 }
 
