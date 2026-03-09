@@ -47,7 +47,7 @@ main {
 }
 
 .sidebar {
-    width: 300px;
+    width: 280px;
     flex-shrink: 0;
 }
 
@@ -60,8 +60,8 @@ main {
 }
 
 .sidebar-name {
-    font-size: 1.3rem;
-    font-weight: 600;
+    font-size: 1.7rem;
+    font-weight: 700;
     margin-bottom: 0.25rem;
 }
 
