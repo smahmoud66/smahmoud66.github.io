@@ -18,7 +18,7 @@ header {
 }
 
 nav {
-    max-width: 720px;
+    max-width: 900px;
     margin: 0 auto;
     padding: 0 1.5rem;
     display: flex;
@@ -35,63 +35,82 @@ nav a:hover {
 }
 
 main {
-    max-width: 720px;
+    max-width: 900px;
     margin: 0 auto;
     padding: 2rem 1.5rem 4rem;
 }
 
-h1 {
-    font-size: 2rem;
-    font-weight: 600;
-    margin-bottom: 1.5rem;
-    color: #1a1a1a;
-}
-
-h2 {
-    font-size: 1.25rem;
-    font-weight: 600;
-    margin-top: 2.5rem;
-    margin-bottom: 1rem;
-    color: #1a1a1a;
-    clear: both;
-}
-
-p {
-    margin-bottom: 1rem;
-}
-
-.intro-block {
+.layout {
     display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    gap: 1.5rem;
+    gap: 3rem;
     align-items: flex-start;
-    margin-bottom: 1.5rem;
 }
 
-.profile-photo {
-    width: 180px;
-    min-width: 180px;
+.sidebar {
+    width: 240px;
     flex-shrink: 0;
-    aspect-ratio: 3 / 4;
-    object-fit: cover;
 }
 
-.intro-text {
-    flex: 1;
-    min-width: 200px;
-}
-
-.intro-text p {
+.sidebar-photo {
+    width: 200px;
+    height: auto;
+    display: block;
     margin-bottom: 1rem;
 }
 
-main a {
+.sidebar-name {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+}
+
+.sidebar-location {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 0.75rem;
+}
+
+.sidebar-links {
+    list-style: none;
+    padding: 0;
+    margin: 0.5rem 0 0;
+}
+
+.sidebar-links li {
+    margin-bottom: 0.35rem;
+}
+
+.sidebar-links a {
     color: #1a73e8;
     text-decoration: none;
 }
 
-main a:hover {
+.sidebar-links a:hover {
+    text-decoration: underline;
+}
+
+.content h2 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    color: #1a1a1a;
+}
+
+.content p {
+    margin-bottom: 1rem;
+}
+
+.email-line {
+    margin-top: 1rem;
+}
+
+.content a {
+    color: #1a73e8;
+    text-decoration: none;
+}
+
+.content a:hover {
     text-decoration: underline;
 }
 
@@ -122,8 +141,24 @@ footer {
     border-top: 1px solid #e0e0e0;
 }
 
-@media (max-width: 600px) {
-    h1 {
-        font-size: 1.5rem;
+@media (max-width: 700px) {
+    .layout {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .sidebar-photo {
+        width: 160px;
+    }
+
+    main {
+        padding: 1.5rem 1rem 3rem;
     }
 }
